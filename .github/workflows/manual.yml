@@ -28,7 +28,7 @@ jobs:
         run: mkdir -p ./testresources/poe
       - name: copy compiled classes to testresources directory
         working-directory: ./src/poe
-        run: cp -t  "../../test/poe " Login.class Task.class
+        run: cp -t  "../../test/poe" Login.class Task.class
       - name: copy compiled Test classes to testresources directory
         working-directory: ./test/poe
         run: cp -t  "../../testresources/poe" TaskTest.class
